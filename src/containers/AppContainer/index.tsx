@@ -1,8 +1,12 @@
 import PublicRouter from "../../router/PublicRouter"
+import {PublicProvider} from '../../store/context/PublicContext';
 
 const AppContainer = () => {
   return (
-    <PublicRouter />
+    <PublicProvider>
+      <PublicRouter />
+    </PublicProvider>
   )
 }
- export default AppContainer
+
+export default AppContainer
